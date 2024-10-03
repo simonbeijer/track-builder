@@ -1,22 +1,28 @@
 {
   "name": "track-builder",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "seed": "node prisma/seed.js"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.14"
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "@prisma/client": "^5.x.x"
   },
   "devDependencies": {
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.14"
+    "prisma": "^5.x.x",
+    "tailwindcss": "^3.x.x",
+    "eslint": "^8.x.x",
+    "eslint-config-next": "^13.x.x",
+    "postcss": "^8.x.x",
+    "autoprefixer": "^10.x.x"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   }
 }

@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 :root {
+  --color-purple: #7F3FBF;
+  --color-blue: #1C8EF9;
   --background: #ffffff;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --color-purple: #7F3FBF;
+    --color-blue: #1C8EF9;
     --background: #0a0a0a;
     --foreground: #ededed;
   }
