@@ -5,8 +5,12 @@
 :root {
   --color-purple: #7F3FBF;
   --color-blue: #1C8EF9;
-  --background: #ffffff;
+  --background: #f5f5f5;
   --foreground: #171717;
+  --grey: #cacaca;
+  --text: #0a0a0a;
+  --black: #171717;
+  --white: #f5f5f5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,17 +19,28 @@
     --color-blue: #1C8EF9;
     --background: #0a0a0a;
     --foreground: #ededed;
+    --grey: #cacaca;
+    --text: #0a0a0a;
+    --black: #171717;
+    --white: #f5f5f5;
   }
 }
 
 body {
-  color: var(--foreground);
+  color: var(--background);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  z-index: 9999
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .shadow-custom {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
 }

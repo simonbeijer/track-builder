@@ -1,7 +1,17 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@components/*": ["./src/app/components/*"], // Specific alias for components
+      "@/*": ["./src/*"] // General alias for the src directory
     }
-  }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.js",
+    "**/*.jsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

@@ -23,7 +23,32 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex flex-col flex-wrap gap-2 bg-black justify-between relative h-[100vh]">
+          <header
+            className="h-12"
+            style={{
+              backgroundColor: "var(--foreground)",
+              color: "var(--text)",
+            }}
+          >
+            Header
+          </header>
+          <main
+            className="max-w-5xl mx-5 lg:mx-auto w-full min-h-[60vh] flex justify-center items-center"
+            style={{ backgroundColor: "var(--color-purple)" }}
+          >
+            {children}
+          </main>
+          <footer
+            className="h-20"
+            style={{
+              backgroundColor: "var(--foreground)",
+              color: "var(--text)",
+            }}
+          >
+            Footer
+          </footer>
+        </div>
       </body>
     </html>
   );

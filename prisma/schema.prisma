@@ -4,12 +4,14 @@ datasource db {
 }
 
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "linux-musl-openssl-3.0.x"]
 }
 
 model Track {
   id        Int      @id @default(autoincrement())
   title     String
-  artist    String
-  duration  Int
+  duration  Int?     // Duration in seconds (optional)
+  createdAt DateTime @default(now()) // Timestamp when the track is added
+  filePath  String
 }

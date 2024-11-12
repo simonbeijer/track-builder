@@ -8,19 +8,28 @@
     "start": "next start",
     "seed": "node prisma/seed.js"
   },
+  "include": [
+    "next-env.d.ts",
+    "**/*.js",
+    "**/*.jsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
   "dependencies": {
+    "@prisma/client": "^5.x.x",
+    "feather-icons": "^4.29.2",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "@prisma/client": "^5.x.x"
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "prisma": "^5.x.x",
-    "tailwindcss": "^3.x.x",
+    "autoprefixer": "^10.x.x",
     "eslint": "^8.x.x",
     "eslint-config-next": "^13.x.x",
     "postcss": "^8.x.x",
-    "autoprefixer": "^10.x.x"
+    "prisma": "^5.x.x",
+    "tailwindcss": "^3.x.x"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
