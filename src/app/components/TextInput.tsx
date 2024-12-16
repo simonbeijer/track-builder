@@ -1,5 +1,12 @@
 "use client";
-export default function Input({ placeholder, value, onChange, required }) {
+interface Input  {
+  placeholder: string,
+   value: any
+   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
+   required: boolean
+
+}
+export default function Input({ placeholder, value, onChange, required }: Input) {
   const styles = {
     input: {
       background: "var(--white)",

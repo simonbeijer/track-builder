@@ -18,18 +18,22 @@
   ],
   "dependencies": {
     "@prisma/client": "^5.x.x",
-    "feather-icons": "^4.29.2",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-feather": "^2.0.10",
+    "uuid": "^11.0.3"
   },
   "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.12",
     "autoprefixer": "^10.x.x",
     "eslint": "^8.x.x",
     "eslint-config-next": "^13.x.x",
     "postcss": "^8.x.x",
     "prisma": "^5.x.x",
-    "tailwindcss": "^3.x.x"
+    "tailwindcss": "^3.x.x",
+    "typescript": "^5.7.2"
   },
   "prisma": {
     "seed": "node prisma/seed.js"
